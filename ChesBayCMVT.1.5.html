@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" type="text/css" href="css/phase5.css" />
+<link rel="icon" type="image/png" href="images/cmvt_favicon.png" />
+<!--<script type="text/javascript"
+    src="http://maps.google.com/maps/api/js?sensor=false">
+</script>
+<script src="scripts/showBayMapBlank.js">
+</script>-->
+</head>
+<body>
+    <div id="controls">
+        <h1>Chesapeake Bay Watershed Phase 5 Community Model Visualization Tool:</h1>
+        <p>Select Basin:</p>
+        <form action = "cgi/DisplayLoadsKML0.6.py">
+            <select name="basin">
+                <option value = "SU"/> Upper Susquehanna<br/>
+                <option value = "SW"/> Susquehanna, West Branch<br/>
+                <option value = "SJ"/> Juniata<br/>
+                <option value = "SL"/> Lower Susquehanna<br/>
+                <option value = "PU"/> Upper Potomac<br/>
+                <option value = "PM"/> Middle Potomac<br/>
+                <option value = "PL"/> Lower Potomac<br/>
+                <option value = "PS"/> Shenandoah <br/>
+                <option value = "WU"/> Upper Western Shore<br/>
+                <option value = "WM"/> Middle Western Shore<br/>
+                <option value = "WL"/> Lower Western Shore<br/>
+                <option value = "EU"/> Upper Eastern Shore<br/>
+                <option value = "EM"/> Middle Eastern Shore<br/>
+                <option value = "EL"/> Lower Eastern Shore<br/>
+                <option value = "XU"/> Upper Patuxent<br/>
+                <option value = "XL"/> Lower Patuxent<br/>
+                <option value = "YM"/> Mattaponi<br/>
+                <option value = "YP"/> Pamunkey<br/>
+                <option value = "YL"/> Lower York<br/>
+                <option value = "RU"/> Upper Rappahannock<br/>
+                <option value = "RL"/> Lower Rappahannock<br/>
+                <option value = "JU"/> Upper James<br/>
+                <option value = "JL"/> Lower James<br/>
+                <option value = "JA"/> Appomatox<br/>
+                <option value = "JB"/> James Below Richmond<br/>
+
+            </select>
+        <p> Choose Scenario to run:</p>
+            <select name="scenario">
+                <option value = "2"/> 1985 High Historical Load</br>
+                <option value = "1"/> 1985 No-Action</br>
+                <option value = "10"/> 2010 No-Action</br>
+                <option value = "12"/> 2010 Tributary Strategy</br>
+                <option value = "13"/> E3 - Everyone, Everywhere, Everything</br>
+            </select>
+      <!--  <p> Choose a nutrient to display on the map:</p>
+            <input type="radio" name="nutrient" value="N" CHECKED >Nitrogen
+            <input type="radio" name="nutrient" value="P">Phosphorus-->
+            <p><input type= "submit" value = "Display Map"></p>
+        </form>
+    </div>
+    <div id="map_canvas">
+        <img src="images/Chesapeakewatershedmap.jpg" width=70%>
+    </div>
+    <div id = "summary">
+      <div id = "totals">
+      </div>
+      <div id = "land_use">
+      <p> </p>
+    </div>
+
+</body>
+</html>
